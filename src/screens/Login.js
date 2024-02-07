@@ -1,4 +1,11 @@
-import { Button, Text, TextInput, TouchableOpacity, View } from "react-native";
+import {
+  Button,
+  Image,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import React from "react";
 import ROUTES from "../navigation";
 import { useNavigation } from "@react-navigation/native";
@@ -16,6 +23,16 @@ const Login = () => {
         backgroundColor: "#F5EEF8",
       }}
     >
+      <Image
+        style={{
+          width: 100,
+          height: 100,
+          borderRadius: 100,
+        }}
+        source={{
+          uri: "https://m.media-amazon.com/images/I/71wsD1NPjLS.jpg",
+        }}
+      />
       <Text>Username</Text>
       <TextInput
         placeholder="Write your username ..."
@@ -40,10 +57,11 @@ const Login = () => {
           backgroundColor: "#D7BDE2",
         }}
       ></TextInput>
-      <Button title="Login" />
+      <Button color="#6C3483" title="Login" />
       <View
         style={{
           flexDirection: "row",
+          gap: 5,
         }}
       >
         <Text>Don't have an account?</Text>
@@ -54,7 +72,7 @@ const Login = () => {
         >
           <Text
             style={{
-              color: "blue",
+              color: "#FF33CE",
             }}
           >
             JoinUs

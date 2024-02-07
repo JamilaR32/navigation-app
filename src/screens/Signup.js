@@ -62,10 +62,11 @@ const Signup = () => {
           backgroundColor: "#D7BDE2",
         }}
       ></TextInput>
-      <Button title="SignUp" />
+      <Button color="#6C3483" title="SignUp" />
       <View
         style={{
           flexDirection: "row",
+          gap: 5,
         }}
       >
         <Text>Already a user?</Text>
@@ -76,7 +77,7 @@ const Signup = () => {
         >
           <Text
             style={{
-              color: "blue",
+              color: "#FF33CE",
             }}
           >
             Login
